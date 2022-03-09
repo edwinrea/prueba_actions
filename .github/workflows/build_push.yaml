@@ -43,7 +43,7 @@ defaults:
           # relative path to the place where source code with Dockerfile is located
           context: ./src/samples/simple
           # Note: tags has to be all lower-case
-	  tags: ${{ github.sha }}
+	  #tags: ${{ github.sha }}
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
 
